@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CURRENCY_KEY = exports.currencyCodes = exports.CURRENCIES = void 0;
+exports.BASE_CURRENCY = exports.FACILITIES = exports.FACILITY_MAP = exports.CURRENCY_KEY = exports.currencyCodes = exports.CURRENCIES = void 0;
 exports.CURRENCIES = [
     { code: "XAF", name: "Central African Franc", symbol: "FCFA", flag: "🇨🇬" },
     { code: "USD", name: "US Dollar", symbol: "$", flag: "🇺🇸" },
@@ -17,4 +17,21 @@ exports.CURRENCIES = [
 ];
 exports.currencyCodes = exports.CURRENCIES.map((c) => c.code);
 exports.CURRENCY_KEY = "selected_currency";
-//# sourceMappingURL=currencies.js.map
+// ── facility icon map ──────────────────────────────────────────────────────
+exports.FACILITY_MAP = {
+    parking: { icon: "car-outline", lib: "ion" },
+    pool: { icon: "water-outline", lib: "ion" },
+    gym: { icon: "barbell-outline", lib: "ion" },
+    restaurant: { icon: "restaurant-outline", lib: "ion" },
+    wifi: { icon: "wifi-outline", lib: "ion" },
+    pets: { icon: "paw-outline", lib: "ion" },
+    sports: { icon: "football-outline", lib: "ion" },
+    laundry: { icon: "shirt-outline", lib: "ion" },
+    security: { icon: "shield-checkmark-outline", lib: "ion" },
+    elevator: { icon: "arrow-up-outline", lib: "ion" },
+    garden: { icon: "leaf-outline", lib: "ion" },
+    balcony: { icon: "home-outline", lib: "ion" },
+};
+exports.FACILITIES = Object.keys(exports.FACILITY_MAP);
+exports.BASE_CURRENCY = "XAF";
+//# sourceMappingURL=constants.js.map
