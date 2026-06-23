@@ -57,6 +57,7 @@ export declare const FACILITY_MAP: {
         lib: "ion";
     };
 };
-export declare const FACILITIES: (keyof typeof FACILITY_MAP)[];
+export type Facility = keyof typeof FACILITY_MAP;
+export declare const FACILITIES: Facility[];
 export declare const BASE_CURRENCY = "XAF";
 //# sourceMappingURL=constants.d.ts.map

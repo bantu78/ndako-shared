@@ -25,23 +25,23 @@ export const CURRENCY_KEY = "selected_currency";
 
 
  // ── facility icon map ──────────────────────────────────────────────────────
- export const FACILITY_MAP = {
-  parking:    { icon: "car-outline" as const,           lib: "ion" as const },
-  pool:       { icon: "water-outline" as const,         lib: "ion" as const },
-  gym:        { icon: "barbell-outline" as const,       lib: "ion" as const },
-  restaurant: { icon: "restaurant-outline" as const,    lib: "ion" as const },
-  wifi:       { icon: "wifi-outline" as const,          lib: "ion" as const },
-  pets:       { icon: "paw-outline" as const,           lib: "ion" as const },
-  sports:     { icon: "football-outline" as const,      lib: "ion" as const },
-  laundry:    { icon: "shirt-outline" as const,         lib: "ion" as const },
+export const FACILITY_MAP = {
+  parking:    { icon: "car-outline" as const,              lib: "ion" as const },
+  pool:       { icon: "water-outline" as const,            lib: "ion" as const },
+  gym:        { icon: "barbell-outline" as const,          lib: "ion" as const },
+  restaurant: { icon: "restaurant-outline" as const,       lib: "ion" as const },
+  wifi:       { icon: "wifi-outline" as const,             lib: "ion" as const },
+  pets:       { icon: "paw-outline" as const,               lib: "ion" as const },
+  sports:     { icon: "football-outline" as const,         lib: "ion" as const },
+  laundry:    { icon: "shirt-outline" as const,            lib: "ion" as const },
   security:   { icon: "shield-checkmark-outline" as const, lib: "ion" as const },
-  elevator:   { icon: "arrow-up-outline" as const,      lib: "ion" as const },
-  garden:     { icon: "leaf-outline" as const,          lib: "ion" as const },
-  balcony:    { icon: "home-outline" as const,          lib: "ion" as const },
+  elevator:   { icon: "arrow-up-outline" as const,         lib: "ion" as const },
+  garden:     { icon: "leaf-outline" as const,             lib: "ion" as const },
+  balcony:    { icon: "home-outline" as const,             lib: "ion" as const },
 } satisfies Record<string, { icon: string; lib: "ion" | "mci" }>;
- 
 
-export const FACILITIES = Object.keys(FACILITY_MAP) as (keyof typeof FACILITY_MAP)[];
+export type Facility = keyof typeof FACILITY_MAP;
 
+export const FACILITIES = Object.keys(FACILITY_MAP) as Facility[];
 
 export const BASE_CURRENCY = "XAF";
