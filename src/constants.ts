@@ -44,4 +44,19 @@ export type Facility = keyof typeof FACILITY_MAP;
 
 export const FACILITIES = Object.keys(FACILITY_MAP) as Facility[];
 
+export const FACILITY_LABEL_KEYS: Record<Facility, string> = {
+  parking: "facilities.parking",
+  pool: "facilities.pool",
+  gym: "facilities.gym",
+  restaurant: "facilities.restaurant",
+  wifi: "facilities.wifi",
+  pets: "facilities.pets",
+  sports: "facilities.sports",
+  laundry: "facilities.laundry",
+  security: "facilities.security",
+  elevator: "facilities.elevator",
+  garden: "facilities.garden",
+  balcony: "facilities.balcony",
+};
+
 export const BASE_CURRENCY = "XAF";
